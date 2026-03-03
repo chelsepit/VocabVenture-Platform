@@ -121,9 +121,9 @@ function updateSpeakButtonContent(btn, speaking) {
     const icon = btn.querySelector('img.speak-button-icon');
     if (icon) {
         icon.src = '../../assets/images/icons/speak-icon.svg';
-        icon.alt = speaking ? 'speaking' : 'muted';
+        icon.alt = speaking ? 'speaking' : ' ';
     } else {
-        btn.innerHTML = speaking ? '🔊' : '🔇';
+        btn.innerHTML = speaking ? '🔊' : ' ';
     }
 }
 
